@@ -64,7 +64,14 @@
                 <input class="fileNone" type="file" name="imague"  id="upload">
                 <label id="fileStatus" class="upload" for="upload">Subir Imagen</label>
             </div>
-            
+            <?php
+                if (isset($data['errors'])) {
+                    if (array_key_exists('error_file', $data['errors'])) { ?>
+                        <span class="login__error"><?= $data['errors']['error_file'] ?></span>
+                <?php
+                    }
+                }
+                ?>
             <div class="select">
                 <select name="genero">
                     <option value="">Seleccione Genero...</option>

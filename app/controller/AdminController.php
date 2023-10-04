@@ -89,7 +89,9 @@ class AdminController extends Controller
 
             $file = $_FILES["imague"]["name"];
             $url_temp = $_FILES["imague"]["tmp_name"];
-            $file_size = floor($_FILES["imague"]["size"] / 1024);
+            $file_size = $_FILES["imague"]["size"] / 1024;
+            print_r(gettype($file_size));
+
             $file_type = ($_FILES["imague"]["tmp_name"] != null) ? mime_content_type($_FILES["imague"]["tmp_name"]) : "";
             
             if ($name == "") {
@@ -114,6 +116,7 @@ class AdminController extends Controller
 
             if ($file_size > 5120) {
                 $errors['error_file'] = "el archivo es muy pesado";
+                
             }
 
             if ($file_type != "image/jpg" && $file_type != "image/jpeg" && $file_type != "image/png") {
