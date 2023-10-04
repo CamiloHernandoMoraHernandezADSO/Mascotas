@@ -121,9 +121,12 @@ class RegisterController extends Controller
                 $response['status']  = 200;
                 $response['data']   = true;
                 $response['message'] = 'el correo se encuentra registrado';
+                $response['exist'] = true;
+                
             } else {
                 $response['status'] = 200;
                 $response['message'] = 'estoy sobre escribiendo el mensaje';
+                $response['exist'] = false;
             }
             //Codificamos la respuesta al cliente
             echo json_encode($response, http_response_code($response['status']) );

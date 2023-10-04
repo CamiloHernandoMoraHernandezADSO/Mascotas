@@ -11,7 +11,6 @@
         <input type="text" name="name" placeholder="Nombre" value="<?=$data['datos']['name']?>">
 
         <?php
-        print_r($data['errors']);
             if (isset($data['errors'])) {
                 if (array_key_exists('name_errors', $data['errors'])) { ?>
                     <span class="login__error"><?= $data['errors']['name_errors'] ?></span>
