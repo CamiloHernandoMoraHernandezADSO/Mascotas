@@ -1,5 +1,5 @@
 //Url base del proyecto
-const url = "http://pets.test";
+const url = "http://localhost/mascotas";
 //Atributos del formulario
 const email = document.getElementById('email')
 let usuario = document.getElementById('first_name');

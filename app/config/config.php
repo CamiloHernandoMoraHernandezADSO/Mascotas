@@ -1,6 +1,6 @@
 <?php 
 
-define("URL", "http://pets.test");
+define("URL", "http://localhost/mascotas");
 
 define("MASTER", "estomidediecisei");
 

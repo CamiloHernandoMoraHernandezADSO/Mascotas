@@ -16,7 +16,7 @@
         </div>
 
         <div class="picture picture2" id="image2">
-            <img class="picture__image" src="assets/images/slide2.png" alt="">
+            <img class="picture__image" src="/assets/images/slide2.png" alt="">
         </div>
 
         <a class="link" href="<?= URL ?>/login"><img src="assets/images/chevron-right.svg" alt=""></a>
