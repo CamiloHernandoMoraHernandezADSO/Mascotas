@@ -1,0 +1,20 @@
+{
+    "name": "adso/mascotas",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "adso\\Mascotas\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "adso",
+            "email": "adso@gmail.com"
+        }
+    ],
+    "minimum-stability": "beta",
+    "require": {
+        "phpmailer/phpmailer": "^6.8.1"
+    }
+}
